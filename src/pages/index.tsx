@@ -2,7 +2,6 @@ import { type NextPage } from "next";
 
 import Head from "next/head";
 import Link from "next/link";
-import Image from "next/image";
 import { api } from "~/utils/api";
 
 const Home: NextPage = () => {
@@ -27,7 +26,7 @@ const Home: NextPage = () => {
 
           <div className="w-full mt-24">
             {data.map((car) => (
-              <div id={car.id} className="flex align-middle pl-1 pt-1 pb-1 border-b-4 border-white-400">
+              <div key={car.id} className="flex align-middle pl-1 pt-1 pb-1 border-b-4 border-white-400">
                 <img src={car.image} alt="Car image"
                   width={196}
                   className="border-solid border-4 border-slate-400"
