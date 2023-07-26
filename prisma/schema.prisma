@@ -13,12 +13,12 @@ datasource db {
 
 model Car {
   id      String @id @default(cuid())
-  image   String @db.VarChar(256)
+  image   String @db.VarChar(400)
   model   String @db.VarChar(256)
-  retail  String @db.VarChar(256)
-  mileage String @db.VarChar(256)
+  retail  String @db.VarChar(32)
+  mileage String @db.VarChar(32)
+  features  String   @db.VarChar(400)
 
-  features  String   @db.VarChar(256)
   createdAt DateTime @default(now())
   sold      Boolean
 }
