@@ -17,7 +17,7 @@ model Car {
   model   String @db.VarChar(256)
   retail  String @db.VarChar(32)
   mileage String @db.VarChar(32)
-  features  String   @db.VarChar(400)
+  features  String   @db.VarChar(500)
 
   createdAt DateTime @default(now())
   sold      Boolean

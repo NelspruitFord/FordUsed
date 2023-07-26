@@ -26,7 +26,7 @@ const CreateTeamWizard = () => {
       <div className="pb-3 bg-cover bg-[url('../../public/index.png')] w-full border-x border-slate-400 md:max-w-lg">
          <div className="mt-24 flex pl-1 pt-1 pb-1 border-b border-slate-400">
             <nav>
-               <Link href="/" className="" >Home</Link>
+               <Link href="/">Home</Link>
             </nav>
          </div>
          <h1 className="ml-1 pt-4">Add a new car below:</h1>
@@ -94,8 +94,8 @@ const Insert = () => {
    return (
       <>
          <Head>
-            <title>Basstrack</title>
-            <meta name="description" content="Official website of bass fishing" />
+            <title>Produkta Motor Group Pre Owned Vehicles</title>
+            <meta name="description" content="Produkta Pre Owned" />
             <link rel="icon" href="/favicon.ico" />
          </Head>
          <main className="flex h-screen justify-center">

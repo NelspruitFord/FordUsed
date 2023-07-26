@@ -10,14 +10,14 @@ const Home: NextPage = () => {
   if (isLoading) return <div>Loading...</div>
 
   if (!data) return (
-    <h1>No team data found, add a new team <Link className="text-red-600" href="/add-car">HERE</Link></h1>
+    <h1>No car data found</h1>
   )
 
   return (
     <>
       <Head>
-        <title>Ford Used</title>
-        <meta name="description" content="Ford Used Vehicles for Sale" />
+        <title>Produkta Motor Group Pre Owned Vehicles</title>
+        <meta name="description" content="Produkta Pre Owned" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex h-screen justify-center">
@@ -31,7 +31,7 @@ const Home: NextPage = () => {
                   width={195}
                 />
                 <div className="ml-3 overflow-auto h-36">
-                  <h1 className="underline">{car.model}</h1>
+                  <h1 className="underline"><Link href={`https://wa.me/27763408289?text=I%27m%20interested%20in%20your%20${car.model}%20for%20sale`}>{car.model}</Link></h1>
                   <p className="mt-1">Retail: R {car.retail}</p>
                   <p className="mt-1 mb-1">Mileage: {car.mileage} Km</p>
                   <hr />
