@@ -29,7 +29,7 @@ const Home: NextPage = () => {
                   className="border-solid border-4 border-slate-400"
                   width={195}
                 />
-                <div className="ml-3 overflow-auto h-28">
+                <div className="ml-3 overflow-auto h-36">
                   <h1 className="underline">{car.model}</h1>
                   <p className="mt-1">Retail: R {car.retail}</p>
                   <p className="mt-1">Mileage: {car.mileage} Km</p>
