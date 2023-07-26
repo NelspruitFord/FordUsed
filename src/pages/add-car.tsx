@@ -6,7 +6,8 @@ import { api } from "~/utils/api";
 const CreateTeamWizard = () => {
    const [imageURL, setImageURL] = useState("");
    const [modelName, setModelName] = useState("");
-   const [details, setDetails] = useState("");
+   const [retail, setRetail] = useState("");
+   const [mileage, setMileage] = useState("");
    const [features, setFeatures] = useState("");
 
    const [insertFlag, setInsertFlag] = useState(false);
@@ -50,17 +51,24 @@ const CreateTeamWizard = () => {
 
          <br />
 
-         <div className="ml-1">Details:
-            <input className="bg-black shadow appearance-none border rounded ml-12 py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
-               id="playerNames" type="text"
-               value={details}
-               onChange={(e) => setDetails(e.target.value)}
+         <div className="ml-1">Retail:
+            <input className="bg-black shadow appearance-none border rounded ml-14 py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
+               id="details"
+               value={retail}
+               onChange={(e) => setRetail(e.target.value)}
+            />
+         </div>
+         <div className="ml-1">Mileage:
+            <input className="bg-black shadow appearance-none border rounded ml-10 py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
+               id="details"
+               value={mileage}
+               onChange={(e) => setMileage(e.target.value)}
             />
          </div>
 
          <div className="ml-1">Features:
-            <input className="bg-black shadow appearance-none border rounded ml-9 py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
-               id="playerNames" type="text"
+            <textarea className="bg-black shadow appearance-none border rounded ml-9 py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
+               id="features"
                value={features}
                onChange={(e) => setFeatures(e.target.value)}
             />
@@ -70,7 +78,7 @@ const CreateTeamWizard = () => {
 
          <button
             onClick={() => {
-               mutate({ image: imageURL, model: modelName, details: details, features: features })
+               mutate({ image: imageURL, model: modelName, retail: retail, mileage: mileage, features: features })
                setInsertFlag(true)
             }}
 
