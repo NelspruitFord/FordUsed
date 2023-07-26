@@ -32,21 +32,20 @@ const Home: NextPage = () => {
                 <div className="ml-3 overflow-auto h-36">
                   <h1 className="underline">{car.model}</h1>
                   <p className="mt-1">Retail: R {car.retail}</p>
-                  <p className="mt-1">Mileage: {car.mileage} Km</p>
+                  <p className="mt-1 mb-1">Mileage: {car.mileage} Km</p>
+                  <hr />
                   <p className="mt-1">{car.features}</p>
                 </div>
               </div>
             ))}
-            <div className="ml-2 mt-2 text-[#25d366]">
-              <Link href={"https://wa.me/27763408289?text=I%27m%20interested%20in%20your%20car%20for%20sale"}>
+            <div className="flex justify-center text-[#25d366]">
+              {/* <Link href={"https://wa.me/27763408289?text=I%27m%20interested%20in%20your%20car%20for%20sale"}>
                 <img width={195} src='https://static.whatsapp.net/rsrc.php/v3/y7/r/DSxOAUB0raA.png' />
                 Whatsapp us!
-              </Link>
+              </Link> */}
             </div>
-            {/* <div className="relative">
-              <Link href={"https://wa.me/27763408289?text=I%27m%20interested%20in%20your%20car%20for%20sale"} className="bg-[url('https://static.whatsapp.net/rsrc.php/v3/y7/r/DSxOAUB0raA.png')] w-16 h-16 bg-cover"></Link>
-            </div> */}
           </div>
+          <footer className="absolute md:max-w-lg bottom-0 h-12 w-full bg-[url('../../public/footer.png')] bg-cover bg-no-repeat"/>
         </div>
       </main>
     </>
