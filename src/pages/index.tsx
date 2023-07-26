@@ -43,7 +43,7 @@ const Home: NextPage = () => {
             </div>
           </div>
           <Link className="pb-14" href={"https://wa.me/27763408289?text=I%27m%20interested%20in%20your%20Raptor%20for%20sale"}>
-            <img width={195} src='https://static.whatsapp.net/rsrc.php/v3/y7/r/DSxOAUB0raA.png' />
+            <img width={195} src='https://static.whatsapp.net/rsrc.php/v3/y7/r/DSxOAUB0raA.png' alt="Whatsapp button logo" />
             Whatsapp us!
           </Link>
           <footer className="absolute md:max-w-lg bottom-0 h-12 w-full bg-[url('../../public/footer.png')] bg-cover bg-no-repeat" />
