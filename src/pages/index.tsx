@@ -21,8 +21,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex h-screen justify-center">
-        <div className="overflow-auto no-scrollbar pb-3 bg-[#0009B4] bg-cover bg-no-repeat bg-[url('../../public/index.png')] w-full border-x border-slate-400 md:max-w-lg">
-          <div className="w-full mt-14">
+        <header className="absolute md:max-w-lg top -0 h-16 w-full bg-center bg-cover bg-no-repeat   bg-[url('../../public/header.png')]"></header>
+        <div className="overflow-auto no-scrollbar pb-3 bg-[#0009B4] w-full border-x border-slate-400 md:max-w-lg">
+          <div className="w-full mt-16">
             {data.map((car) => (
               <div key={car.id} className="flex align-middle pl-1 pt-2 pb-1 border-b-4 border-white-400">
                 <img src={car.image} alt="Car image"
@@ -41,7 +42,7 @@ const Home: NextPage = () => {
             <div className="flex justify-center text-[#25d366]">
             </div>
           </div>
-          <footer className="absolute md:max-w-lg bottom-0 h-12 w-full bg-[url('../../public/footer.png')] bg-cover bg-no-repeat"/>
+          <footer className="absolute md:max-w-lg bottom-0 h-12 w-full bg-[url('../../public/footer.png')] bg-cover bg-no-repeat" />
         </div>
       </main>
     </>
