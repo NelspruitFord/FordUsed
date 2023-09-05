@@ -1,6 +1,7 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 import { api } from "~/utils/api";
 
 const Home: NextPage = () => {
@@ -22,7 +23,7 @@ const Home: NextPage = () => {
       </Head>
       <main className="flex h-screen justify-center">
         <header className="absolute md:max-w-lg top -0 h-16 w-full bg-center bg-cover bg-no-repeat   bg-[url('../../public/header.png')]"></header>
-        <div className="overflow-auto no-scrollbar pb-3 bg-[#0009B4] w-full border-x border-slate-400 md:max-w-lg">
+        <div className="overflow-auto no-scrollbar pb-3 bg-[#101010] w-full border-x border-slate-400 md:max-w-lg">
           <div className="w-full mt-16">
             {data.map((car) => (
               <div key={car.id} className="flex align-middle pl-1 pt-2 pb-1 border-b-4 border-white-400">
@@ -39,6 +40,8 @@ const Home: NextPage = () => {
                 </div>
               </div>
             ))}
+            {/* <img src="https://za.top10place.com/img_files/1001395683264961" 
+                width={200} height={200}/> */}
             <div className="flex justify-center text-[#25d366]">
             </div>
           </div>
