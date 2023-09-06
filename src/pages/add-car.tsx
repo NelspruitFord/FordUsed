@@ -23,7 +23,7 @@ const CreateTeamWizard = () => {
    )
 
    return (
-      <div className="pb-3 bg-cover bg-[url('../../public/index.png')] w-full border-x border-slate-400 md:max-w-lg">
+      <div className="pb-3 bg-cover w-full border-x border-slate-400 md:max-w-lg">
          <div className="mt-24 flex pl-1 pt-1 pb-1 border-b border-slate-400">
             <nav>
                <Link href="/">Home</Link>
